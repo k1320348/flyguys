@@ -1,0 +1,552 @@
+body,
+html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --dark-blue: #011627;
+  --primary-colour: #E71D36;
+  --secondary-colour: #011627;
+  --tertiary-colour: #ff9f1c;
+}
+
+/*
+* === GLOBAL ===
+*/
+
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: var(--primary-colour);
+  border-color: var(--primary-colour);
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-colour);
+  border-color: var(--secondary-colour);
+  color: #F5F5F5;
+}
+
+/*
+* === HOME ===
+*/
+
+
+.homepage-header {
+  background-image: url("../images/StockSnap_TCAGKE1EEC.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* Place text in the middle of the image */
+.homepage-header .homepage-header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 100%;
+}
+
+.homepage-header-content .tab-content {
+	background-color: #F5F5F5;
+	padding: 30px;
+}
+
+.homepage-header .homepage-header-content h1  {
+	color: #F5F5F5;
+  text-align: center;
+	font-size: 70px;
+}
+
+.nav-tabs > li > a {
+  background-color: var(--primary-colour);
+  color: #F5F5F5;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+  border-radius: 0;
+  border: 0;
+}
+
+.nav-tabs > li > a:hover {
+  background-color: var(--secondary-colour);
+  color: #F5F5F5;
+}
+
+.nav-tabs > li.active > a {
+  background-color: #F5F5F5;
+}
+
+.homepage-header-content #status .fa-check {
+	color: green;
+}
+
+.homepage-header-content #status .fa-exclamation {
+	color: orange;
+}
+
+.homepage-header-content #status .fa-times {
+	color: red;
+}
+
+.homepage-header-content .btn-primary {
+  background-color: var(--primary-colour);
+  border: 0;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+.homepage-header-content .btn-primary:hover {
+  background-color: var(--secondary-colour);
+  border: 0;
+}
+
+/*
+* === ADMIN ===
+*/
+
+.admin-header {
+  background-image: url("http://kunet.kingston.ac.uk/k1600534/flyguys/assets/images/StockSnap_TCAGKE1EEC.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* Place text in the middle of the image */
+.admin-header .admin-header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 100%;
+}
+
+.admin-header-content .tab-content {
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+
+.admin-header .admin-header-content h1  {
+  color: #F5F5F5;
+  text-align: center;
+  font-size: 70px;
+}
+
+/*
+* === SEARCH RESULTS ===
+*/
+
+.search-results-header {
+  background-image: url("http://kunet.kingston.ac.uk/k1600534/flyguys/assets/images/StockSnap_TCAGKE1EEC.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* Place text in the middle of the image */
+.search-results-header .search-results-header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F5F5F5;
+  width: 100%;
+}
+
+.search-results-header .search-results-header-content h1  {
+  text-align: center;
+  font-size: 70px;
+}
+
+.search-results-header .search-results-header-content h3  {
+  text-align: center;
+  font-size: 50px;
+}
+
+/*
+* — Featured Destinations —
+*/
+
+#featured-destinations img {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#featured-destinations h1,
+#featured-destinations h3,
+#featured-destinations p {
+  text-align: center;
+}
+
+#featured-destinations h1 {
+  padding-bottom: 30px;
+}
+
+#featured-destinations .destination {
+  margin-bottom: 60px;
+}
+
+
+/*
+* === FOOTER ===
+*/
+
+.footer1 {
+  background: #F5F5F5;
+	padding-top: 40px;
+	padding-right: 0;
+	padding-bottom: 20px;
+	padding-left: 0;
+  margin-top: 40px;
+
+}
+
+.title-widget {
+	color: #898989;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 25px;
+	margin-left: 0;
+	padding-left: 28px;
+}
+
+.title-widget::before {
+    background-color: #ea5644;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+
+
+.widget_nav_menu ul {
+    list-style: outside none none;
+    padding-left: 0;
+}
+
+.widget_archive ul li {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+}
+
+
+.widget_nav_menu ul li {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+	position: relative;
+    text-transform: uppercase;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+	width:95%;
+}
+
+
+
+.title-median {
+  color: #636363;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+
+			.nomargin { margin:0px; padding:0px;}
+
+
+
+
+
+.footer-bottom {
+    background-color: #E71D36;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #FDFFFC;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+  color: #fff;
+}
+
+.navbar-brand {
+  color: #2EC4B6;
+}
+
+.navbar-custom {
+  background-color: #fdfffc;
+  color: #011627;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: #011627;
+    -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+  color: #FDFFFC;
+  background-color: #E71D36;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+  text-decoration: none;
+  background-color: #011627;
+  color: #fdfffc;
+}
+
+.navbar-custom .navbar-brand {
+  color: #e71d36;
+}
+.navbar-custom .navbar-toggle {
+  background-color: #eeeeee;
+}
+.navbar-custom .icon-bar {
+  background-color: #e71d36;
+}
+
+
+.admin-card .well {
+  background-color: var(--primary-colour);
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+
+}
+
+.admin-card a:hover {
+  text-decoration: none;
+}
+
+.admin-card .well h2 {
+  color: #F5F5F5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.admin-card .well:hover {
+  background-color: var(--secondary-colour);
+  text-decoration: none;
+}
+
+
+#flight-search-details {
+  display: none;
+}
+
+.header-colour {
+  height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.header-colour.yellow {
+  background-color: #ff9f1c;
+}
+
+.header-colour.red {
+  background-color: #E71D36;
+}
+
+/* Place text in the middle of the image */
+.header-colour .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 100%;
+}
+
+.header-colour .content h1  {
+  color: #F5F5F5;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-colour .content h3  {
+  color: #F5F5F5;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*
+* === ERROR 404 ===
+*/
+
+.header-404 {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #E71D36;
+  margin-bottom: 0px;
+}
+
+.header-404 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 100%;
+}
+
+.header-404 .content h1  {
+  color: #F5F5F5;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-404 .content h3  {
+  color: #F5F5F5;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+/*
+* === SIGN IN ===
+*/
+
+form.form-boxed {
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+
+form.form-boxed p {
+  text-align: center;
+}
+
+form.form-boxed h2 {
+  text-align: left;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+form.form-boxed h3 {
+  text-align: left;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+form.form-boxed span.required {
+  color: var(--primary-colour);
+}
+
+form.form-boxed .btn-primary {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.jumbotron {
+  background-color: #2ec4b6;
+  color: var(--secondary-colour);
+}
+
+.section-colour {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section-colour.yellow {
+  background-color: #ff9f1c;
+}
+
+.section-colour.red {
+  background-color: var(--primary-colour);
+}
+
+.section-colour.turquoise {
+  background-color: #2ec4b6;
+}
+
+/* Place text in the middle of the image */
+.section-colour .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 100%;
+}
+
+.section-colour .content h1  {
+  color: #F5F5F5;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-colour .content h3  {
+  color: #F5F5F5;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#add-flight-feedback {
+  display: hidden;
+}
